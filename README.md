@@ -5,13 +5,11 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
+  - [🛠 Getting started](#started)
+    - [Tech usage](#usage)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -26,7 +24,7 @@
 
 This is a simple CRUD operational to do list. You are able to Create, Read, Undo and Delete your notes. Used webpack plugin for develpment of /dist files.
 
-## Getting Started
+## Getting Started  <a name="started"></a>
 
 To get started with this project, clone the repository to your local machine and install the required dependencies:
 
@@ -37,7 +35,7 @@ To get started with this project, clone the repository to your local machine and
 
 ```
 
-## Usage
+## Usage <a name="usage"></a>
 
 To start a development server, run the following command:
 
@@ -64,9 +62,10 @@ This will create a production-ready build of your application in the dist folder
 
 ### Key Features <a name="key-features"></a>
 
-- **Add Books to a book list**
-- **Delete Books from the book list**
+- **Add Notes to a note list**
+- **Delete notes from the notes list**
 - **Save data to local storage**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,6 +118,13 @@ __Yordanos Temesgen__
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinia)
 - LinkedIn: [Yordanos-Temesgen](https://linkedin.com/in/yordanos-temesgen-251b6a202)
+
+### future Features <a name="future-features"></a>
+
+- **Edit notes from list**
+- **refresh notes**
+- **clear selected (completed) notes**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
