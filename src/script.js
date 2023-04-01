@@ -14,7 +14,6 @@ const enterIcon = document.querySelector('.bi-box-arrow-in-left');
 
 export const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-
 function clearAllFunc() {
   const task = tasks.filter((task) => !task.completed);
   task.forEach((task, index) => {
