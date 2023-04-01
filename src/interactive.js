@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
 
-import { tasks, todoList } from './script';
+import { tasks, todoList } from './script.js';
 
 export function displayTasks() {
   todoList.innerHTML = '';
