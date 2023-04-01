@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 // Import the stylesheet
 import './style.css';
-
+import { displayTasks } from './interactive.js';
 import * as crud from './CRUD.js';
 
 // Select relevant HTML elements
@@ -14,22 +14,6 @@ const enterIcon = document.querySelector('.bi-box-arrow-in-left');
 
 export const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-export function displayTasks() {
-  todoList.innerHTML = '';
-  tasks.forEach((task, index) => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-      <input type="checkbox" ${
-  task.completed ? 'checked' : ''
-} data-index="${index}">
-      <span>${task.description}</span>
-      <i class="bi bi-three-dots-vertical"></i>
-      <i class="bi bi-trash2"></i>
-    `;
-    li.classList.toggle('completed', task.completed);
-    todoList.appendChild(li);
-  });
-}
 
 function clearAllFunc() {
   const task = tasks.filter((task) => !task.completed);
@@ -38,6 +22,7 @@ function clearAllFunc() {
   });
   localStorage.setItem('tasks', JSON.stringify(task));
   displayTasks();
+  window.location.reload();
 }
 
 form.addEventListener('submit', crud.addItem);

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
-
+import { displayTasks } from './interactive.js';
 import {
-  displayTasks, tasks, form, input, refMe, todoList,
+  tasks, form, input, refMe, todoList,
 } from './script.js';
 
 function editTask(index, newDescription) {
