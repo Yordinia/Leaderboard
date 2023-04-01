@@ -5,12 +5,12 @@ import './style.css';
 const form = document.getElementById('form'); // Get the form element
 const input = document.getElementById('new-item'); // Get the input element
 const todoList = document.getElementById('todo-list'); // Get the todo list element
-const archiveBtn = document.getElementById('archive'); // Get the archive button element
+// const archiveBtn = document.getElementById('archive'); // Get the archive button element
 const refMe = document.querySelector('.fa-refresh'); // Get the refresh icon element
 const enterIcon = document.querySelector('.fa-level-down'); // Get the down arrow icon element
 
 // Define tasks array and get tasks from local storage
-let tasks = JSON.parse(localStorage.getItem('tasks')) || []; // Get the tasks from local storage, if any, or initialize an empty array
+const tasks = JSON.parse(localStorage.getItem('tasks')) || []; // Get the tasks from local storage, if any, or initialize an empty array
 
 function displayTasks() {
   todoList.innerHTML = ''; // Clear current todo list
@@ -19,8 +19,8 @@ function displayTasks() {
     const li = document.createElement('li');
     li.innerHTML = `
       <input type="checkbox" ${
-        task.completed ? 'checked' : ''
-      } data-index="${index}">
+  task.completed ? 'checked' : ''
+} data-index="${index}">
       <span>${task.description}</span>
       <i class="fa fa-ellipsis-v"></i>
       <i class="fa fa-trash"></i>
@@ -33,7 +33,7 @@ function displayTasks() {
 function addItem(e) {
   e.preventDefault(); // Prevent the form from submitting and refreshing the page
   if (input.value) {
-    var x = tasks.length;
+    const x = tasks.length;
     const newTask = {
       description: input.value,
       completed: false,
@@ -63,15 +63,27 @@ function toggleItem(e) {
       trashIcon.style.display = 'block';
       trashIcon.style.cursor = 'pointer';
     } else {
-      // If the li element does not have the "selected" class, show the ellipsis icon and hide the trash icon
+      // If the li element does not have the "selected" class,
+      // show the ellipsis icon and hide the trash icon
       ellipsisIcon.style.display = 'block';
       trashIcon.style.display = 'none';
     }
   }
 
-  refMe.addEventListener('click', ()=>{
-    window.location.reload(); 
-});
+  refMe.addEventListener('click', () => {
+    window.location.reload();
+  });
+
+  function deleteTask(index) {
+    tasks.splice(index, 1); // Remove the task at the given index from the tasks array
+
+    tasks.forEach((task, index) => {
+      task.index = index; // Update the task index
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks)); // Save the tasks array to local storage
+
+    displayTasks(); // Render the updated todo list
+  }
 
   // If the clicked element is an input element, update the completed status of the task
   if (e.target.tagName === 'INPUT') {
@@ -84,7 +96,10 @@ function toggleItem(e) {
     const item = e.target.parentNode;
     const prev = item.previousElementSibling;
     todoList.insertBefore(item, prev);
-    updateTasksIndexes();
+    tasks.forEach((task, index) => {
+      task.index = index; // Update the task index
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
   } else if (e.target.classList.contains('fa-trash')) {
     // If the clicked element is the trash icon, delete the task
     const item = e.target.parentNode;
@@ -92,12 +107,13 @@ function toggleItem(e) {
     deleteTask(index);
   }
 }
+
 // Add event listeners to various elements on the page
 form.addEventListener('submit', addItem);
 todoList.addEventListener('click', toggleItem);
 enterIcon.addEventListener('click', addItem);
 
 // Render the initial tasks on the page when it loads
-window.onload = (e) => {
+window.onload = () => {
   displayTasks();
 };
