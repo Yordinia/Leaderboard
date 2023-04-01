@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 
 import {
-  displayTasks, tasks, form, input, refMe, todoList
+  displayTasks, tasks, form, input, refMe, todoList,
 } from './script.js';
 
 function editTask(index, newDescription) {
@@ -102,5 +102,5 @@ function toggleItem(e) {
 export {
   addItem,
   editTaskDescription,
-  toggleItem
+  toggleItem,
 };

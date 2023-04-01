@@ -40,8 +40,6 @@ function clearAllFunc() {
   displayTasks();
 }
 
-
-
 form.addEventListener('submit', crud.addItem);
 todoList.addEventListener('click', crud.toggleItem);
 enterIcon.addEventListener('click', crud.addItem);
