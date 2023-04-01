@@ -1,10 +1,9 @@
 /* eslint-disable import/no-cycle */
-// Import the stylesheet
+
 import './style.css';
 import { displayTasks } from './interactive.js';
 import * as crud from './CRUD.js';
 
-// Select relevant HTML elements
 export const form = document.getElementById('form');
 export const input = document.getElementById('your-todo');
 export const todoList = document.getElementById('todo-list');
