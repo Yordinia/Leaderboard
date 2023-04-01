@@ -1,7 +1,7 @@
 <div align="center">
   <img src="mussie.png" alt="logo" width="300px"  height="300px" />
   <br/>
-  <h3><b>Webpack App Starter</b></h3>
+  <h3><b>To - do - list</b></h3>
 </div>
 
 This is a simple starter project for building web applications using Webpack. It includes configuration files for development and production builds, as well as basic file structure for a typical web app.
@@ -11,8 +11,8 @@ This is a simple starter project for building web applications using Webpack. It
 To get started with this project, clone the repository to your local machine and install the required dependencies:
 
 ```sh
- git clone git@github.com:MussieTeka/webpack.git
- cd webapp-starter
+ git clone git@github.com:yordinia/yordi-to-do-list.git
+ cd yordi-to-do-list
  npm install
 
 ```
