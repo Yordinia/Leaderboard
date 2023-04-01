@@ -1,10 +1,30 @@
-<div align="center">
-  <img src="mussie.png" alt="logo" width="300px"  height="300px" />
-  <br/>
-  <h3><b>To - do - list</b></h3>
-</div>
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This is a simple starter project for building web applications using Webpack. It includes configuration files for development and production builds, as well as basic file structure for a typical web app.
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 To-Do-List <a name="about-project"></a>
+
+This is a simple CRUD operational to do list. You are able to Create, Read, Undo and Delete your notes. Used webpack plugin for develpment of /dist files.
 
 ## Getting Started
 
@@ -41,14 +61,107 @@ This will create a production-ready build of your application in the dist folder
 
 ## Configuration
 
-This starter project uses Webpack to bundle and optimize your code. The configuration file webpack.config.js includes the following:
 
-- mode: Set to 'development' or 'production' depending on whether you are building for development or production.
-- entry: The entry point for your application. Change this to the path of your main JavaScript file.
-- devServer: Configuration for the development server, including the location of your static files.
-- plugins: Additional plugins to use with Webpack, such as the HtmlWebpackPlugin which generates an HTML file to serve your bundled JavaScript.
-- output: Configuration for where Webpack should output your bundled JavaScript file.
-- module: Configuration for how Webpack should handle different types of files. In this case, it includes a rule for handling CSS files using the css-loader and style-loader.
+### Key Features <a name="key-features"></a>
+
+- **Add Books to a book list**
+- **Delete Books from the book list**
+- **Save data to local storage**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+#### <a href="">Live Demo Link</a>
+
+
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+
+```sh
+  git clone https://github.com/yordinia/Awesome-Books.git
+```
+
+
+
+### Deployment
+
+You can deploy this project using 
+> [Github Pages](page to come) or
+
+> [github html preview](https://htmlpreview.github.io/) and paste index adress into it to view.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors 
+<a name="authors"></a>
+ 
+👤 **Yordanos Temesgen**
+ 
+__Yordanos Temesgen__
+- GitHub: [@yordinia](https://github.com/yordinia)
+- Twitter: [@yordinia](https://twitter.com/yordinia)
+- LinkedIn: [Yordanos-Temesgen](https://linkedin.com/in/yordanos-temesgen-251b6a202)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Java script only, to do a simple CRUD**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give me a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+ We would like to thank all our fellow micronauts.
+ > and someone someone who helped me with the too many functions and confusion !
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+- **What is this project?**
+
+  - It's a  project of micoverse curriculum entitled to do list.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## src directory
 
@@ -58,6 +171,12 @@ The source directory contains:
 - style.css (main styles)
 - script.js (main JavaScript)
 
-## License
+<!-- LICENSE -->
+
+### 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
