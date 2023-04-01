@@ -92,10 +92,13 @@ ul {
 
 li {
   display: flex;
-  align-items: center;
+  gap: 2rem;
   border-bottom: 1px solid #ddd;
-  padding: 16px;
-  margin: 0;
+  padding: 10px;
+}
+
+i.fa.fa-trash{
+  margin: 0 1rem;
 }
 
 li input {
@@ -124,13 +127,18 @@ li.completed {
   color: #000;
 }
 
+
+
 input[type='checkbox'] {
   margin-right: 8px;
   cursor: pointer;
 }
 
 footer {
+  text-align: center;
   position: fixed;
   bottom: 10px;
-  left: 20px;
+  left: 30%;
+  right: 30%;
 }
+
