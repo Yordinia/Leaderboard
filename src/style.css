@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
@@ -34,32 +35,38 @@ h1 {
   font-size: 18px;
 }
 
-form .fa {
+form .bi {
   cursor: pointer;
   color: #8c8c8c;
 }
 
-li .fa {
+li .bi {
   position: absolute;
   right: 16px;
   color: #8c8c8c;
   cursor: move;
 }
 
-.to-do-title .fa {
+.to-do-title .bi {
   cursor: pointer;
   color: #8c8c8c;
 }
 
-form .fa:hover {
+form .bi:hover {
   color: #000;
 }
 
-li .fa:hover {
+#clear-all {
+  margin: 0 10rem;
+  background-color: #d8d2d2;
   color: #000;
 }
 
-.to-do-title .fa:hover {
+li .bi:hover {
+  color: #000;
+}
+
+.to-do-title bi:hover {
   color: #000;
 }
 
@@ -71,13 +78,13 @@ form {
   padding: 16px;
 }
 
-#new-item {
+#your-todo {
   flex: 1;
   border: none;
-  padding: 10px 0;
+  padding: 1rem;
 }
 
-#new-item::placeholder {
+#your-todo::placeholder {
   color: #8c8c8c;
   font-style: italic;
   font-size: 15px;
@@ -97,8 +104,8 @@ li {
   padding: 10px;
 }
 
-i.fa.fa-trash {
-  margin: 0 1rem;
+i.bi.bi-trash2 {
+  margin: 0 2.5rem;
 }
 
 li input {

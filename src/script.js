@@ -1,20 +1,20 @@
 // Import the stylesheet
 import './style.css';
 
+import * as crud from './CRUD.js'
+
 // Select relevant HTML elements
-const form = document.getElementById('form'); // Get the form element
-const input = document.getElementById('new-item'); // Get the input element
-const todoList = document.getElementById('todo-list'); // Get the todo list element
-// const archiveBtn = document.getElementById('archive'); // Get the archive button element
-const refMe = document.querySelector('.fa-refresh'); // Get the refresh icon element
-const enterIcon = document.querySelector('.fa-level-down'); // Get the down arrow icon element
+export const form = document.getElementById('form'); 
+export const input = document.getElementById('your-todo'); 
+const todoList = document.getElementById('todo-list'); 
+const clearAll = document.getElementById('clear-all'); 
+const refMe = document.querySelector('.bi-arrow-clockwise'); 
+const enterIcon = document.querySelector('.bi-box-arrow-in-left'); 
 
-// Define tasks array and get tasks from local storage
-const tasks = JSON.parse(localStorage.getItem('tasks')) || []; // Get the tasks from local storage, if any, or initialize an empty array
+export var tasks = JSON.parse(localStorage.getItem('tasks')) || []; 
 
-function displayTasks() {
-  todoList.innerHTML = ''; // Clear current todo list
-  // Render new todo list based on updated tasks array
+export function displayTasks() {
+  todoList.innerHTML = ''; 
   tasks.forEach((task, index) => {
     const li = document.createElement('li');
     li.innerHTML = `
@@ -22,50 +22,38 @@ function displayTasks() {
   task.completed ? 'checked' : ''
 } data-index="${index}">
       <span>${task.description}</span>
-      <i class="fa fa-ellipsis-v"></i>
-      <i class="fa fa-trash"></i>
+      <i class="bi bi-three-dots-vertical"></i>
+      <i class="bi bi-trash2"></i>
     `;
     li.classList.toggle('completed', task.completed);
-    todoList.appendChild(li); // Add the new list item to the todo list
+    todoList.appendChild(li); 
   });
 }
 
-function addItem(e) {
-  e.preventDefault(); // Prevent the form from submitting and refreshing the page
-  if (input.value) {
-    const x = tasks.length;
-    const newTask = {
-      description: input.value,
-      completed: false,
-      index: x,
-    };
-    tasks.push(newTask); // Add the new task to the tasks array
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-    displayTasks(); // Render the updated todo list
-    form.reset(); // Clear the input field
-    input.focus(); // focus on input
-  }
+function clearAllFunc() {
+  tasks = tasks.filter((task) => !task.completed); 
+  tasks.forEach((task, index) => {
+    task.index = index; 
+  });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+  displayTasks(); 
 }
 
-// This function is called when a user clicks on a task or its associated icons
+
+
+
 function toggleItem(e) {
-  // Find the closest li element to the clicked element
   const li = e.target.closest('li');
   if (li) {
-    // Toggle the "selected" class of the li element
     li.classList.toggle('selected');
-    // Find the ellipsis and trash icons within the li element
-    const ellipsisIcon = li.querySelector('.fa-ellipsis-v');
-    const trashIcon = li.querySelector('.fa-trash');
+    const threeDots = li.querySelector('.bi-three-dots-vertical');
+    const trashIcon = li.querySelector('.bi-trash2');
     if (li.classList.contains('selected')) {
-      // If the li element has the "selected" class, hide the ellipsis icon and show the trash icon
-      ellipsisIcon.style.display = 'none';
+      threeDots.style.display = 'none';
       trashIcon.style.display = 'block';
       trashIcon.style.cursor = 'pointer';
     } else {
-      // If the li element does not have the "selected" class,
-      // show the ellipsis icon and hide the trash icon
-      ellipsisIcon.style.display = 'block';
+      threeDots.style.display = 'block';
       trashIcon.style.display = 'none';
     }
   }
@@ -74,44 +62,31 @@ function toggleItem(e) {
     window.location.reload();
   });
 
-  function deleteTask(index) {
-    tasks.splice(index, 1); // Remove the task at the given index from the tasks array
-
-    tasks.forEach((task, index) => {
-      task.index = index; // Update the task index
-    });
-    localStorage.setItem('tasks', JSON.stringify(tasks)); // Save the tasks array to local storage
-
-    displayTasks(); // Render the updated todo list
-  }
-
-  // If the clicked element is an input element, update the completed status of the task
   if (e.target.tagName === 'INPUT') {
     const { index } = e.target.dataset;
     tasks[index].completed = e.target.checked;
     localStorage.setItem('tasks', JSON.stringify(tasks));
     displayTasks();
-  } else if (e.target.classList.contains('fa-ellipsis-v')) {
-    // If the clicked element is the ellipsis icon, move the task up one position in the list
+  } else if (e.target.classList.contains('bi-three-dots-vertical')) {
     const item = e.target.parentNode;
     const prev = item.previousElementSibling;
     todoList.insertBefore(item, prev);
     tasks.forEach((task, index) => {
-      task.index = index; // Update the task index
+      task.index = index; 
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
-  } else if (e.target.classList.contains('fa-trash')) {
-    // If the clicked element is the trash icon, delete the task
+  } else if (e.target.classList.contains('bi-trash2')) {
     const item = e.target.parentNode;
     const { index } = item.querySelector('input').dataset;
-    deleteTask(index);
+    crud.deleteTask(index);
   }
 }
-
-// Add event listeners to various elements on the page
-form.addEventListener('submit', addItem);
+  
+form.addEventListener('submit', crud.addItem);
 todoList.addEventListener('click', toggleItem);
-enterIcon.addEventListener('click', addItem);
+enterIcon.addEventListener('click', crud.addItem);
+clearAll.addEventListener('click', clearAllFunc);
+todoList.addEventListener('dblclick', crud.editTaskDescription);
 
 // Render the initial tasks on the page when it loads
 window.onload = () => {
