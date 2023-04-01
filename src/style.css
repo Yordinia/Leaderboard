@@ -97,7 +97,7 @@ li {
   padding: 10px;
 }
 
-i.fa.fa-trash{
+i.fa.fa-trash {
   margin: 0 1rem;
 }
 
@@ -127,8 +127,6 @@ li.completed {
   color: #000;
 }
 
-
-
 input[type='checkbox'] {
   margin-right: 8px;
   cursor: pointer;
@@ -141,4 +139,3 @@ footer {
   left: 30%;
   right: 30%;
 }
-
