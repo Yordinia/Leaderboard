@@ -1,141 +1,146 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
+<div align="center">
+  ![](https://user-images.githubusercontent.com/75666332/229297258-24916b9d-2820-45eb-802a-050880b4ca1e.png)
+  <br/>
+  <h3><b>To Do List App</b></h3>
+</div>
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Getting started](#started)
-    - [Tech usage](#usage)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [Future Features](#future-features)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To-Do-List <a name="about-project"></a>
+# 📖 To Do List App <a name="about-project"></a>
 
-This is a simple CRUD operational to do list. You are able to Create, Read, Undo and Delete your notes. Used webpack plugin for develpment of /dist files.
+This is a simple to-do list web application that allows users to add, edit, and delete tasks. The app is built using HTML, CSS, JavaScript, and runs on WebApp. The project is still on progress.
 
-## Getting Started  <a name="started"></a>
+## 🛠 Built With <a name="built-with"></a>
 
-To get started with this project, clone the repository to your local machine and install the required dependencies:
+### Tech Stack <a name="tech-stack"></a>
 
-```sh
- git clone git@github.com:yordinia/yordi-to-do-list.git
- cd yordi-to-do-list
- npm install
+- Client: HTML, CSS, JavaScript
+- Server: Not applicable
+- Database: Not applicable
 
-```
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.w3.org/html/">HTML</a></li>
+    <li><a ref="https://www.w3.org/Style/CSS/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS</a></li>
+ 
+  </ul>
+</details>
 
-## Usage <a name="usage"></a>
+The project was built using the following technologies:
 
-To start a development server, run the following command:
-
-Run Dev Server (Port 8080)
-
-```sh
-  npm start
-```
-
-This will start a local server at http://localhost:8080 and will automatically reload the page whenever you make changes to your code.
-
-## Production
-
-To create a production build, run the following command:
-
-```sh
-  npm run build
-```
-
-This will create a production-ready build of your application in the dist folder.
-
-## Configuration
-
-
-### Key Features <a name="key-features"></a>
-
-- **Add Notes to a note list**
-- **Delete notes from the notes list**
-- **Save data to local storage**
-
+- HTML
+- CSS
+- JavaScript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+### Key Features <a name="key-features"></a>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+- **Create a task with a title and description**
+- **Mark tasks as complete or incomplete**
+- **Delete tasks**
 
-#### <a href="">Live Demo Link</a>
-
-
-
-<!-- GETTING STARTED -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy of the project up and running, follow these steps.
 
+### Prerequisites
 
+In order to run this project, you need to have a web browser installed on your computer.
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-
+Clone this repository to your desired folder by running the following command:
 
 ```sh
-  git clone https://github.com/yordinia/Awesome-Books.git
+  clone git@github.com:yordinia/Yordi-To-Do-List.git
 ```
 
+### Install
 
+Run npm install to install all dependencies
+
+```sh
+  cd To-Do-List
+  npm install
+
+```
+
+### Usage
+
+Run npm start to start the application using webapp live server.
+
+```sh
+  npm start
+
+```
+
+This will open the app in your browser at http://localhost:8081/
+
+### Run tests
+
+To run tests for the To Do List App, follow these steps:
+
+- Open the command prompt or terminal on your computer.
+- Navigate to the project directory using the cd command.
+- Type the command npm run test and press enter.
+
+```sh
+ npm run test
+```
 
 ### Deployment
 
-You can deploy this project using 
-> [Github Pages](page to come) or
-
-> [github html preview](https://htmlpreview.github.io/) and paste index adress into it to view.
-
+You can deploy this project using any web hosting service of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors 
-<a name="authors"></a>
- 
-👤 **Yordanos Temesgen**
- 
-__Yordanos Temesgen__
+## 👥 Author <a name="authors"></a>
+
+This project was developed by:
+
+👤 ** Yordanos Temesgen ** - Developer
+
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinia)
-- LinkedIn: [Yordanos-Temesgen](https://linkedin.com/in/yordanos-temesgen-251b6a202)
-
-### future Features <a name="future-features"></a>
-
-- **Edit notes from list**
-- **refresh notes**
-- **clear selected (completed) notes**
-
-
+- LinkedIn: [@yordinia](https:// -- handel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Java script only, to do a simple CRUD**
+The work on this project is still in progress. Currently, users can add tasks to the list, mark tasks as complete, and delete tasks. However, some features are still under development, such as the ability to edit tasks and sort tasks by priority or due date.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -145,44 +150,36 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give me a star.
+If you like this project, please give it a star on GitHub.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
- We would like to thank all our fellow micronauts.
- > and someone someone who helped me with the too many functions and confusion !
+I would like to thank the following resources and individuals for their help and inspiration:
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-- **What is this project?**
-
-  - It's a  project of micoverse curriculum entitled to do list.
+- <a href="https://www.microverse.org/">Microverse</a>, an online software engineering coding bootcamp.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## src directory
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-The source directory contains:
+- **Can I modify and redistribute this project?**
 
-- index.html (main HTML)
-- style.css (main styles)
-- script.js (main JavaScript)
+  - Yes, you can modify and redistribute this project as long as you follow the terms of the MIT license.
+
+- **How can I contribute to this project?**
+
+  - Contributions, issues, and feature requests are welcome! You can check the issues page to see if there are any current issues or feature requests that you can work on. If not, feel free to submit a new issue or pull request. Before contributing, please read the CONTRIBUTING.md file for guidelines on how to contribute to this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
-### 📝 License <a name="license"></a>
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
