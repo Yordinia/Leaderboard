@@ -1,5 +1,3 @@
-/* eslint-disable import/no-cycle */
-
 import { tasks, todoList } from './script.js';
 
 export function displayTasks() {

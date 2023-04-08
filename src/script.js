@@ -1,5 +1,3 @@
-/* eslint-disable import/no-cycle */
-
 import './style.css';
 import { displayTasks } from './interactive.js';
 import * as crud from './CRUD.js';

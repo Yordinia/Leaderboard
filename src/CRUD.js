@@ -1,4 +1,3 @@
-/* eslint-disable import/no-cycle */
 import { displayTasks } from './interactive.js';
 import {
   tasks, form, input, refMe, todoList,
