@@ -1,7 +1,25 @@
-import { displayTasks } from './interactive.js';
-import {
-  tasks, form, input, refMe, todoList,
-} from './script.js';
+const form = document.getElementById('form');
+const input = document.getElementById('your-todo');
+const refMe = document.querySelector('.bi-arrow-clockwise');
+const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+const todoList = document.getElementById('todo-list');
+
+function displayTasks() {
+  todoList.innerHTML = '';
+  tasks.forEach((task, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <input type="checkbox" ${
+  task.completed ? 'checked' : ''
+} data-index="${index}">
+        <span>${task.description}</span>
+        <i class="bi bi-three-dots-vertical"></i>
+        <i class="bi bi-trash2"></i>
+      `;
+    li.classList.toggle('completed', task.completed);
+    todoList.appendChild(li);
+  });
+}
 
 function editTask(index, newDescription) {
   tasks[index].description = newDescription;
@@ -102,4 +120,8 @@ export {
   addItem,
   editTaskDescription,
   toggleItem,
+  form,
+  tasks,
+  todoList,
+  displayTasks,
 };
