@@ -3,7 +3,7 @@
 <div align="center">
   ![](https://user-images.githubusercontent.com/75666332/229297258-24916b9d-2820-45eb-802a-050880b4ca1e.png)
   <br/>
-  <h3><b>To Do List App</b></h3>
+  <h3><b>Leaderboard</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To Do List App <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
-This is a simple to-do list web application that allows users to add, edit, and delete tasks. The app is built using HTML, CSS, JavaScript, and runs on WebApp. The project is still on progress.
+This is a simple leaderbord web application that allows users to add, edit, and delete users. The app is built using HTML, CSS, JavaScript, and runs on WebApp.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,7 +80,7 @@ In order to run this project, you need to have a web browser installed on your c
 Clone this repository to your desired folder by running the following command:
 
 ```sh
-  clone git@github.com:yordinia/Yordi-To-Do-List.git
+  clone git@github.com:yordinia/Leaderboard.git
 ```
 
 ### Install
@@ -88,7 +88,7 @@ Clone this repository to your desired folder by running the following command:
 Run npm install to install all dependencies
 
 ```sh
-  cd To-Do-List
+  cd Leaderboard
   npm install
 
 ```
@@ -106,7 +106,7 @@ This will open the app in your browser at http://localhost:8081/
 
 ### Run tests
 
-To run tests for the To Do List App, follow these steps:
+To run tests for the Leaderboard, follow these steps:
 
 - Open the command prompt or terminal on your computer.
 - Navigate to the project directory using the cd command.
@@ -128,10 +128,10 @@ You can deploy this project using any web hosting service of your choice.
 
 This project was developed by:
 
-👤 ** Yordanos Temesgen ** - Developer
+👤 ** Yordanos Temesgen **
 
 - GitHub: [@yordinia](https://github.com/yordinia)
-- Twitter: [@yordinia](https://twitter.com/yordinia)
+- Twitter: [@yordinia](https://twitter.com/yordinaM)
 - LinkedIn: [@yordinia](https:// -- handel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -180,6 +180,6 @@ I would like to thank the following resources and individuals for their help and
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
