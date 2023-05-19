@@ -1,6 +1,6 @@
 const apiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-const getGameScores = async (gameId) =>
+const getGameScores = async (gameId) => {
   const response = await fetch(`${apiUrl}games/${gameId}/scores/`);
   const data = await response.json();
   return data.result;
@@ -28,4 +28,4 @@ export {
   saveGameScore,
   sortRequest,
   apiUrl,
-}
+};
