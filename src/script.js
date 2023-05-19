@@ -18,7 +18,16 @@ const createGameApi = async () => {
   if (localGameId) {
     gameId = localGameId;
   } else {
-   fir
+    const response = await fetch(`${apiUrl}games/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name: 'Game-ID' }),
+    });
+
+    const obj = await response.json();
+    gameId = obj.result;
     localStorage.setItem('gameId', gameId);
   }
 };

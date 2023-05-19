@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
     <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css"/>
-  </head>
+  <script defer src="index.bundle.js"></script></head>
   <body>
     <h1>Leaderboard</h1>
     <section class="container">
       <div class="recent-scores">
-        <p> Recent scores <button id="refresh">Refresh</button></p>
-        <table class="table table-striped">
-          <tbody id="score-list">
-
-          </tbody>
+        <p> Recent scores <button>Refresh</button></p>
+        <table>
+          <tr>
+            <td> Name: 100</td>
+          </tr>
+          <tr>
+            <td> Name: 20</td>
+          </tr>
+          <tr>
+            <td> Name: 50</td>
+          </tr>
+          <tr>
+            <td> Name: 78</td>
+          </tr>
+          <tr>
+            <td> Name: 12.5</td>
+          </tr>
         </table>
       </div>
       <div class="add-score">
         <p> Add your score</p>
         <form id="form">
-          <div class="inputs">
           <input id="name" placeholder="Your name ..." />
           <input type="number" id="score" placeholder="Your score..." />
-          <button type="submit"> Submit </button>
+          <button type="submit"></button>
         </form>
       </div>
     </section>
