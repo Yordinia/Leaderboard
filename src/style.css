@@ -39,6 +39,11 @@ table {
   width: 100%;
 }
 
+.recent-scores p {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   text-align: center;
   position: fixed;

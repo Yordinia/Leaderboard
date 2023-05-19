@@ -11,23 +11,11 @@
     <h1>Leaderboard</h1>
     <section class="container">
       <div class="recent-scores">
-        <p> Recent scores <button>Refresh</button></p>
-        <table>
-          <tr>
-            <td> Name: 100</td>
-          </tr>
-          <tr>
-            <td> Name: 20</td>
-          </tr>
-          <tr>
-            <td> Name: 50</td>
-          </tr>
-          <tr>
-            <td> Name: 78</td>
-          </tr>
-          <tr>
-            <td> Name: 12.5</td>
-          </tr>
+        <p> Recent scores <button id="refresh">Refresh</button></p>
+        <table class="table table-striped">
+          <tbody id="score-list">
+
+          </tbody>
         </table>
       </div>
       <div class="add-score">
@@ -35,7 +23,7 @@
         <form id="form">
           <input id="name" placeholder="Your name ..." />
           <input type="number" id="score" placeholder="Your score..." />
-          <button type="submit"></button>
+          <button type="submit"> Submit </button>
         </form>
       </div>
     </section>
