@@ -4,7 +4,8 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -58,6 +59,6 @@ table {
 }
 
 footer {
-  width: fit-content;
-  margin-top: auto;
+  margin: auto;
+  margin-bottom: 0;
 }
