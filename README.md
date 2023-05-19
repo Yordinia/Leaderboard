@@ -1,10 +1,9 @@
 <a name="readme-top"></a>
 
-![](https://user-images.githubusercontent.com/75666332/229297258-24916b9d-2820-45eb-802a-050880b4ca1e.png)
- <br/>
 <div align="center"> 
-  <h3><b>Leaderboard</b></h3>
-</div>
+
+[Wire Frame](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/images/leaderboard_wireframe.png)
+<br/> <h3><b>Leaderboard</b></h3></div>
 
 # 📗 Table of Contents
 
@@ -31,39 +30,27 @@
 
 # 📖 Leaderboard <a name="about-project"></a>
 
-This is a simple leaderbord web application that allows users to add, edit, and delete users. The app is built using HTML, CSS, JavaScript, and runs on WebApp.
+This is a simple leaderbord web application that allows users to add, edit, and delete users.
 
 ## 🛠 Built With <a name="built-with"></a>
-
+- The app is built using HTML, CSS, JavaScript, POST API and runs on WebApp.
 ### Tech Stack <a name="tech-stack"></a>
-
-- Client: HTML, CSS, JavaScript
-- Server: Not applicable
-- Database: Not applicable
-
 <details>
-  <summary>Client</summary>
+  <summary>Teck-stack</summary>
   <ul>
-    <li><a href="https://www.w3.org/html/">HTML</a></li>
-    <li><a ref="https://www.w3.org/Style/CSS/">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS</a></li>
- 
+    <li> Client: HTML, CSS, JavaScript</li>
+    <li> Server: Webpack, gh-pages </li>
+    <li> Database: Not applicable </li> 
   </ul>
 </details>
-
-The project was built using the following technologies:
-
-- HTML
-- CSS
-- JavaScript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Key Features <a name="key-features"></a>
 
-- **Create a task with a title and description**
-- **Mark tasks as complete or incomplete**
-- **Delete tasks**
+- **Create a game ID**
+- **Add name and score**
+- **Display name and score from API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +88,6 @@ Run npm start to start the application using webapp live server.
   npm start
 
 ```
-
 This will open the app in your browser at http://localhost:8081/
 
 ### Run tests
@@ -132,13 +118,13 @@ This project was developed by:
 
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinaM)
-- LinkedIn: [@yordinia](https:// -- handel)
+- LinkedIn: [@yordinia](https://www.linkedin.com/in/yordanos-temesgen-941727233)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-The work on this project is still in progress. Currently, users can add tasks to the list, mark tasks as complete, and delete tasks. However, some features are still under development, such as the ability to edit tasks and sort tasks by priority or due date.
+- Clearing scores
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
