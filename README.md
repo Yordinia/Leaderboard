@@ -180,6 +180,6 @@ I would like to thank the following resources and individuals for their help and
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENCE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
