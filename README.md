@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
-[Wire Frame](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/images/leaderboard_wireframe.png)
-
 <div align="center"> 
+
+[Wire Frame](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/images/leaderboard_wireframe.png)
   <h3><b>Leaderboard</b></h3>
 </div>
 
@@ -120,7 +120,7 @@ This project was developed by:
 
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinaM)
-- LinkedIn: [@yordinia](https:// -- handel)
+- LinkedIn: [@yordinia](https://www.linkedin.com/in/yordanos-temesgen-941727233/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
