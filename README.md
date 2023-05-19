@@ -1,9 +1,10 @@
 <a name="readme-top"></a>
 
-<div align="center"> 
-
 [Wire Frame](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/images/leaderboard_wireframe.png)
-<br/> <h3><b>Leaderboard</b></h3></div>
+
+<div align="center"> 
+  <h3><b>Leaderboard</b></h3>
+</div>
 
 # 📗 Table of Contents
 
@@ -17,7 +18,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -25,6 +26,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
+
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -102,9 +104,9 @@ To run tests for the Leaderboard, follow these steps:
  npm run test
 ```
 
-### Deployment
+### Deployment <a name="deployment"></a>
 
-You can deploy this project using any web hosting service of your choice.
+# > [LINK](https://yordinia.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,13 +120,15 @@ This project was developed by:
 
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinaM)
-- LinkedIn: [@yordinia](https://www.linkedin.com/in/yordanos-temesgen-941727233)
+- LinkedIn: [@yordinia](https:// -- handel)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Clearing scores
+- Clearing the scores
+- Editing name / scores
+- Sorting / dragging
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,6 +170,6 @@ I would like to thank the following resources and individuals for their help and
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENCE.md) licensed.
+This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
