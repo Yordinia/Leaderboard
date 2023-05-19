@@ -18,7 +18,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -116,9 +116,9 @@ To run tests for the Leaderboard, follow these steps:
  npm run test
 ```
 
-### Deployment
+### Deployment <a name="deployment"></a>
 
-You can deploy this project using any web hosting service of your choice.
+[LINK] - 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,3 +183,7 @@ I would like to thank the following resources and individuals for their help and
 This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+I improved the look and feel of the application
+kept the general layout of the wireframe
+I used plain CSS
