@@ -16,13 +16,26 @@ h1 {
 .container {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 3rem;
   width: 70vw;
   margin: 0 auto;
   padding: 1rem 2rem;
   background-color: #fff;
   box-shadow: 0 0 7px #000;
   position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  width: 49%;
+}
+
+button {
+  background-color: #16bc90;
 }
 
 .recent-scores {
@@ -45,7 +58,6 @@ table {
 }
 
 footer {
-  text-align: center;
-  position: fixed;
-  bottom: 10px;
+  width: fit-content;
+  margin-top: auto;
 }

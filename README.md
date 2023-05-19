@@ -183,7 +183,3 @@ I would like to thank the following resources and individuals for their help and
 This project is [MIT](https://github.com/Yordinia/yordinia/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-I improved the look and feel of the application
-kept the general layout of the wireframe
-I used plain CSS
