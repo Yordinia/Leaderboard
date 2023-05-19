@@ -25,10 +25,6 @@ h1 {
   position: relative;
 }
 
-button {
-  background-color: #16bc90;
-}
-
 .recent-scores {
   width: 50%;
 }
@@ -41,6 +37,11 @@ table {
   border: 2px solid #000;
   padding: 0.5rem;
   width: 100%;
+}
+
+.recent-scores p {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
