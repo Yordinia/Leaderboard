@@ -1,5 +1,5 @@
 import './style.css';
-import createGame from './modules/createGame.js'
+import createGame from './modules/createGame.js';
 import {
   apiUrl,
   getGameScores,
@@ -40,7 +40,7 @@ refreshButton.addEventListener('click', async () => {
   const scoresList = document.getElementById('score-list');
   scoresList.innerHTML = '';
   scores.forEach((score) => {
-    const tr = createGame({user: score.user, score:score.score});
+    const tr = createGame({ user: score.user, score: score.score });
     scoresList.appendChild(tr);
   });
 });
@@ -52,6 +52,6 @@ formElement.addEventListener('submit', async (event) => {
   const scoreInput = document.getElementById('score');
   const name = nameInput.value.trim();
   const score = scoreInput.value;
-  await saveGameScore(gameId, {name:name, score:score});
+  await saveGameScore(gameId, { name, score });
   formElement.reset();
 });
