@@ -118,7 +118,7 @@ To run tests for the Leaderboard, follow these steps:
 
 ### Deployment <a name="deployment"></a>
 
-[LINK] - 
+# > [LINK](https://yordinia.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
