@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  ![](https://user-images.githubusercontent.com/75666332/229297258-24916b9d-2820-45eb-802a-050880b4ca1e.png)
-  <br/>
+![](https://user-images.githubusercontent.com/75666332/229297258-24916b9d-2820-45eb-802a-050880b4ca1e.png)
+ <br/>
+<div align="center"> 
   <h3><b>Leaderboard</b></h3>
 </div>
 
