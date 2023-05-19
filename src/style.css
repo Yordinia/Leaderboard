@@ -25,6 +25,10 @@ h1 {
   position: relative;
 }
 
+button {
+  background-color: #16bc90;
+}
+
 .recent-scores {
   width: 50%;
 }
