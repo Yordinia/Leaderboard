@@ -4,6 +4,7 @@ import {
   apiUrl,
   getGameScores,
   saveGameScore,
+  sortRequest,
 } from './modules/app.js';
 
 const refreshButton = document.querySelector('#refresh');
@@ -34,7 +35,8 @@ createGameApi();
 
 // Refresh
 refreshButton.addEventListener('click', async () => {
-  const scores = await getGameScores(gameId);
+  let scores = await getGameScores(gameId);
+  scores = sortRequest(scores);
   const scoresList = document.getElementById('score-list');
   scoresList.innerHTML = '';
   scores.forEach((score) => {

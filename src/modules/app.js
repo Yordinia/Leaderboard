@@ -18,8 +18,15 @@ const saveGameScore = async (gameId, {name, score}) => {
     return data.result;
   };
   
+const sortRequest = (result) => {
+  const scores = result.sort((x, y) => y.score - x.score);
+  return scores;
+};
+
+
 export {
   getGameScores,
   saveGameScore,
+  sortRequest,
   apiUrl,
 }
